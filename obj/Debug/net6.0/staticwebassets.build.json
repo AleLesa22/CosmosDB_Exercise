@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GYj914csk/NhCaTomF6bYCCooX8u9V/8tHo5/QDHHYA=",
+  "Source": "Employees_CosmosDB",
+  "BasePath": "_content/Employees_CosmosDB",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
