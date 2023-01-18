@@ -10,12 +10,12 @@ namespace FBAuthDemoAPI.Controllers
     {
         private readonly ILogger _logger;
         private readonly IFamilyService _familyService;
-
         public FamilyController(IFamilyService familyService, ILogger<FamilyController> logger)
         {
             _familyService = familyService;
             _logger = logger;
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Family>>> GetFamilyData()
         {
@@ -30,6 +30,7 @@ namespace FBAuthDemoAPI.Controllers
                 return StatusCode(500, "Some error occured while retreiving data");
             }
         }
+
         [HttpPost]
         public async Task<ActionResult> AddFamilyData(Family family)
         {
@@ -47,6 +48,7 @@ namespace FBAuthDemoAPI.Controllers
                 return StatusCode(500, "Some error occured while inserting data");
             }
         }
+
         [HttpDelete]
         public async Task<ActionResult> DeleteFamilyData(string id)
         {
@@ -61,6 +63,7 @@ namespace FBAuthDemoAPI.Controllers
                 return StatusCode(500, "Some error occured while deleting data");
             }
         }
+
         [HttpPut]
         public async Task<ActionResult> UpdateFamilyData(Family family)
         {

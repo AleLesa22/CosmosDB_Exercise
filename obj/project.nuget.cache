@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qd1gsRa7ursnZiLvD0UaTDJZSQmbSXEnmu2JE++Eq7FTBAKAOB7++1o3VVIgsgd8TSAK/VWxnaNCoEwb1gaaiQ==",
+  "dgSpecHash": "Vf1N3gtPm8Y5EqtZywk4YuE+rumucGhODCDaB7sPGC/TtrEmc+tRAKPqavye/MXdXq98/TX4bfo3qGxSsf3qrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\FBAuthDemoAPI\\FBAuthDemoAPI.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\Cosmos -NET\\CosmosDB_Exercise\\FBAuthDemoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avidakovic\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.azure.cosmos\\3.31.2\\microsoft.azure.cosmos.3.31.2.nupkg.sha512",

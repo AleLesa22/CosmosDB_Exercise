@@ -18,6 +18,7 @@ namespace FBAuthDemoAPI.Services.Implementation
         {
             await this._container.CreateItemAsync<Family>(family, new PartitionKey(family.Id));
         }
+
         public async Task DeleteFamilyDataAsync(string id)
         {
             if (await GetFamilyDataFromId(id))
@@ -25,6 +26,7 @@ namespace FBAuthDemoAPI.Services.Implementation
                 await this._container.DeleteItemAsync<Family>(id, new PartitionKey($"{id}"));
             }
         }
+
         public async Task<IEnumerable<Family>> GetFamilyDataAsync(string queryString)
         {
             var query = this._container.GetItemQueryIterator<Family>(new QueryDefinition(queryString));
@@ -32,7 +34,6 @@ namespace FBAuthDemoAPI.Services.Implementation
             while (query.HasMoreResults)
             {
                 var response = await query.ReadNextAsync();
-
                 results.AddRange(response.ToList());
             }
             return results;
@@ -44,31 +45,24 @@ namespace FBAuthDemoAPI.Services.Implementation
             {
                 await this._container.ReplaceItemAsync<Family>(family, family.Id, new PartitionKey(family.Id));
             }
-
-
         }
+
         private async Task<bool> GetFamilyDataFromId(string id)
         {
-            //use parameterized query to avoid sql injection
             string query = $"select * from c where c.id=@familyId";
             QueryDefinition queryDefinition = new QueryDefinition(query).WithParameter("@familyId", id);
             List<Family> familyResults = new List<Family>();
-            // Item stream operations do not throw exceptions for better performance.
-            // Use GetItemQueryStreamIterator instead of GetItemQueryIterator
-            //As an exercise change the Get method to use GetItemQueryStreamIterator instead of GetItemQueryIterator
-            FeedIterator streamResultSet = _container.GetItemQueryStreamIterator(
-             queryDefinition,
-             requestOptions: new QueryRequestOptions()
-             {
-                 PartitionKey = new PartitionKey(id),
-                 MaxItemCount = 10,
-                 MaxConcurrency = 1
-             });
+            FeedIterator streamResultSet = _container.GetItemQueryStreamIterator(queryDefinition, requestOptions: new QueryRequestOptions()
+            {
+                PartitionKey = new PartitionKey(id),
+                MaxItemCount = 10,
+                MaxConcurrency = 1
+            });
+
             while (streamResultSet.HasMoreResults)
             {
                 using (ResponseMessage responseMessage = await streamResultSet.ReadNextAsync())
                 {
-
                     if (responseMessage.IsSuccessStatusCode)
                     {
                         dynamic streamResponse = FromStream<dynamic>(responseMessage.Content);
@@ -87,6 +81,7 @@ namespace FBAuthDemoAPI.Services.Implementation
             }
             return false;
         }
+
         private static T FromStream<T>(Stream stream)
         {
             using (stream)

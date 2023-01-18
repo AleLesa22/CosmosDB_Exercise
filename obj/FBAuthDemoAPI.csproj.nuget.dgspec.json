@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\FBAuthDemoAPI\\FBAuthDemoAPI.csproj": {}
+    "C:\\Users\\avidakovic\\Desktop\\Cosmos -NET\\CosmosDB_Exercise\\FBAuthDemoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\FBAuthDemoAPI\\FBAuthDemoAPI.csproj": {
+    "C:\\Users\\avidakovic\\Desktop\\Cosmos -NET\\CosmosDB_Exercise\\FBAuthDemoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\FBAuthDemoAPI\\FBAuthDemoAPI.csproj",
+        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\Cosmos -NET\\CosmosDB_Exercise\\FBAuthDemoAPI.csproj",
         "projectName": "FBAuthDemoAPI",
-        "projectPath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\FBAuthDemoAPI\\FBAuthDemoAPI.csproj",
+        "projectPath": "C:\\Users\\avidakovic\\Desktop\\Cosmos -NET\\CosmosDB_Exercise\\FBAuthDemoAPI.csproj",
         "packagesPath": "C:\\Users\\avidakovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\FBAuthDemoAPI\\obj\\",
+        "outputPath": "C:\\Users\\avidakovic\\Desktop\\Cosmos -NET\\CosmosDB_Exercise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
