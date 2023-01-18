@@ -10,7 +10,7 @@ namespace Employees_CosmosDB.Controllers
     {
         private readonly string CosmosDBAccountURI = "https://localhost:8081/";
         private readonly string CosmosDBAccountPrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
-        private readonly string CosmosDbName = "EmployeeManagementDB";
+        private readonly string CosmosDbName = "Testdb";
         private readonly string CosmosDbContainerName = "Employees";
 
         private Container ContainerClient()
@@ -96,8 +96,8 @@ namespace Employees_CosmosDB.Controllers
                 existingItem.City = emp.City;
                 existingItem.Department = emp.Department;
                 existingItem.Designation = emp.Designation;
-                var updateRes = await container.ReplaceItemAsync(existingItem, emp.id, new PartitionKey(partitionKey));
-                return Ok(updateRes.Resource);
+                var updateResultWithoutPartitionChanging = await container.ReplaceItemAsync(existingItem, emp.id, new PartitionKey(partitionKey));
+                return Ok(updateResultWithoutPartitionChanging.Resource);
             }
             catch (Exception ex)
             {
@@ -114,7 +114,7 @@ namespace Employees_CosmosDB.Controllers
             {
                 var container = ContainerClient();
                 var response = await container.DeleteItemAsync<EmployeeModel>(empId, new PartitionKey(partitionKey));
-                return Ok(response.StatusCode);
+                return Ok("Sucessful Deletion" + response.StatusCode);
             }
             catch (Exception ex)
             {

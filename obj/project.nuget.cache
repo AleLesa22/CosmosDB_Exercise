@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pC2XPRS5smLm5TCT2xH/MxNPGc3R6jjqMAUXGKExLARqZekpHDFi/oaZgSuFRoJ7fdJvEGc5YuT94Az1kZVvhg==",
+  "dgSpecHash": "WjnUbaRElUo4bJHtLSqYRNZKvC8EV9jc2GH2KW9MUfrKyzYK8lvqP4v1cRMxdHJbxRJxn0WTqlJx2cTSb0n17A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\Employees_CosmosDB\\Employees_CosmosDB.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\CosmosDB_Exercise\\Employees_CosmosDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avidakovic\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.azure.cosmos\\3.31.2\\microsoft.azure.cosmos.3.31.2.nupkg.sha512",

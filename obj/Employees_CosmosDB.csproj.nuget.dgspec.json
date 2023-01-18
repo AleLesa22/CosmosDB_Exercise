@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\Employees_CosmosDB\\Employees_CosmosDB.csproj": {}
+    "C:\\Users\\avidakovic\\Desktop\\CosmosDB_Exercise\\Employees_CosmosDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\Employees_CosmosDB\\Employees_CosmosDB.csproj": {
+    "C:\\Users\\avidakovic\\Desktop\\CosmosDB_Exercise\\Employees_CosmosDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\Employees_CosmosDB\\Employees_CosmosDB.csproj",
+        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\CosmosDB_Exercise\\Employees_CosmosDB.csproj",
         "projectName": "Employees_CosmosDB",
-        "projectPath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\Employees_CosmosDB\\Employees_CosmosDB.csproj",
+        "projectPath": "C:\\Users\\avidakovic\\Desktop\\CosmosDB_Exercise\\Employees_CosmosDB.csproj",
         "packagesPath": "C:\\Users\\avidakovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\LeetCode\\Employees_CosmosDB\\obj\\",
+        "outputPath": "C:\\Users\\avidakovic\\Desktop\\CosmosDB_Exercise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
